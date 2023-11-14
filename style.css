@@ -1,0 +1,414 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300&family=Nunito:ital,wght@0,300;1,200;1,300&family=Roboto+Condensed:ital,wght@1,300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&family=Lato:wght@300&family=Nunito:ital,wght@0,300;1,200;1,300&family=Roboto+Condensed:ital,wght@1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+
+
+body{
+    background-color:#777;
+}
+.header{
+    padding: 0 1.3rem;
+    background-color: #d5cf1b;
+    z-index: -1;
+}
+/* navegacion  */
+.header .navigation{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top:2rem ;
+}
+
+
+
+/* SHOP NAVEGACION */
+.headerShop{
+    font-size: 2rem;
+    padding: .5rem .8rem;
+    cursor: pointer;
+    transition: all .3s;
+}
+.headerShop:hover{
+    color: #fff;
+    background-color: #000;
+    
+}
+.headerShop:hover  ~ .lista{
+    display: block;
+}
+
+    /* lista de Shop */
+
+
+.bx-menu.bx{
+    display: none;
+    font-size: 2.3rem;
+    width: 100px;
+    
+}
+.lista{
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    top: 5rem;
+    display: none;
+}
+.lista li{
+    margin: .7rem 1.5rem;
+}
+
+.navigation h1{
+    font-size: 3rem;
+}
+
+.headerIcons{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+.navigation .headerIcons i{
+    font-size:2.5rem ;
+}
+
+.headerIcons .cart{
+    display: flex;
+    position: relative;
+    padding-right: .4rem;
+}   
+
+
+.cartNumber{
+
+    position: absolute;
+    top: -11px;
+    right: 4px;
+    font-size: 1.3rem;
+}
+
+/* HEADER CONTENT */
+
+
+.hContent{
+    padding: 2rem 1rem 8rem;
+    display: flex;
+    align-items: center;
+    color: #fff;
+
+}
+
+.hContentText{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+    text-align: center;
+    padding: 0 2.4rem;
+    width: 50%;
+    
+}
+.sloganText{
+    letter-spacing: .4rem;
+    width: 500px;
+}
+.sloganText > p{
+    font-size: 6rem;
+    line-height: .9;
+}
+.sloganText p span{
+    font-size: 8rem;
+    font-weight: bold;
+}
+.hContentText p.slogan{
+    font-family: 'Abel', sans-serif;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.button{
+    color: #fff;
+    background-color: #000;
+    padding: 1rem 2.5rem;
+    font-size: 2rem;
+    transition: all .5s;
+    box-shadow: 6px 7px 8px 3px rgba(0,0,0,0.32);
+    -webkit-box-shadow: 6px 7px 8px 3px rgba(0,0,0,0.32);
+    -moz-box-shadow: 6px 7px 8px 3px rgba(0,0,0,0.32);
+}
+.button:hover{
+    transform: scale(1.1);
+    box-shadow: 12px 13px 27px -2px rgba(0,0,0,0.66);
+    -webkit-box-shadow: 12px 13px 27px -2px rgba(0,0,0,0.66);
+    -moz-box-shadow: 12px 13px 27px -2px rgba(0,0,0,0.66);
+}
+
+
+.himage{
+    width: 50%;
+}
+
+.hContentImage{
+    width: 459 ;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding-right: 3rem;
+}
+.bolsas{
+    width: 666px;
+}
+
+.verde{
+    z-index: 1;
+    position: relative;
+    
+    
+}
+.hContentImage .morado{
+    z-index: 0;
+    position: absolute;
+    top: 15rem;
+    right: -5rem;
+    transform: rotate(-12deg);
+}
+
+.hContentImage .chile{
+    width: 152px;
+    left: 3rem;
+    position: absolute;
+    z-index: 2;
+    animation: rotating 20s linear infinite;
+}
+@keyframes rotating {
+    0%{
+        transform: rotate(0);
+       
+    }
+    100%{
+        transform: rotate(360deg);
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+/* SECCION MAIN */
+
+
+
+
+.main{
+    background-color: #fff4e4;
+text-align: center;
+}
+
+
+
+/* TITULO */
+
+.main >h1 {
+    color: #000;
+    font-size: 5rem;
+    padding-top: 4rem;
+}
+
+
+
+
+/* CATEGORIAS DEL MAIN */
+.main .catMain{
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    font-size: 2rem;
+    
+}
+.catMain h3{
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+
+.catMain h3:hover::after {
+    content: ""; /* Necesario para generar un contenido */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    border-bottom: 3px solid #000 /* Puedes ajustar el color y grosor según tus preferencias */
+}
+
+
+
+
+
+/*  CONTAINER DE PRODUCTOS*/
+.productMain{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(400px ,1fr));
+    justify-items: center;
+    
+}
+
+
+
+/* CARTA PRODUCTO */
+.productMain .cardMain{
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+    max-width: 450px;
+    gap: 3rem;
+    padding: 2rem 3rem;
+    position: relative;
+}
+
+/* ELEMENTOS DE LA CARTA */
+.cardMain .fade{
+    font-size: 1.3rem;
+    color: #444;
+    transition: all .5s;
+}
+.cardMain .cardContain{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.cardContain h4{
+    font-size: 1.7rem;
+}
+.cardContain span{
+    font-size: 1.2rem;
+    
+}
+
+.cardMain > i{
+    color: #fff;
+    font-size: 3rem;
+    border: 5px solid #000;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+    right: 3rem;
+    bottom: 5rem;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.productImage{
+    transition: all .4s;
+    width: 100%;
+}
+
+/* ANIMACION DE LA CARTA */
+.cardMain:hover{
+    background-color: #b166ea;
+}
+.cardMain:hover  .fade{
+    transform: translateY(2rem);
+    animation: fadeOut .35s ease-in forwards;
+}
+.cardMain:hover  .bx-plus{
+    transform: scale(1.2);
+}
+.cardMain:hover  .productImage{
+    transform: translateY(-2rem);
+}
+
+
+
+
+@keyframes fadeOut {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+
+@media screen and (max-width:1300px) {
+    .bx-menu.bx{
+        display: block;
+    }
+    .headerShop{
+        display: none;
+    }
+    .hContentImage .bolsas{
+        width: 333px;
+    }
+    .hContentImage .morado{
+        right: 2rem;
+    }
+
+    .hContentImage .chile{
+        width: 110px;
+    }
+}
+@media screen and (max-width:900px) {
+    .bx-menu.bx{
+        display: block;
+    }
+    .headerShop{
+        display: none;
+    }
+    .navigation h1{
+        font-size: 2rem;
+    }
+     .himage{
+        display: none;
+    }
+    .hContentText{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .sloganText{
+        width: 250px;
+    }
+    .hContentText .sloganText p{
+        font-size: 2rem;
+    }
+    .hContentText .sloganText p span{
+        font-size: 3rem;
+    }
+
+    .button{
+        font-size: 1rem;
+    }
+
+    .main h1{
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    .catMain h3{
+        font-size: 1.3rem;
+    }
+
+    .fade{
+        margin: 0 auto;
+    }
+}
+
